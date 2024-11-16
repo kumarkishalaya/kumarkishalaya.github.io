@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kumar  Kishalaya | Fault in our Neural Networks</title>
+    <meta name="author" content="Spencer  Pao" />
+    <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+" />
+    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website" />
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="none" id="highlight_theme_light" />
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://kumarkishalaya.github.io/blog/2024/fault_in_nn/">
+    
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark" />
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="https://kumarkishalaya.github.io/"><span class="font-weight-bold">Spencer</span>   Pao</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">about</a>
+              </li>
+
+
+              <!-- resume -->
+              <li class="nav-item ">
+                <a class="nav-link" href="https://drive.google.com/file/d/1XpJ6r60RD7ezaKOpcZCOYJjopKRvcHZN/view" target="_blank">resume</a>
+              </li>
+              
+              
+              <!-- Blog -->
+              <li class="nav-item active">
+                <a class="nav-link" href="/blog/">blog</a>
+              </li>
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/projects/">projects</a>
+              </li>
+
+                            <!-- inspirations -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/inspirations/">inspirations</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <div class="toggle-container">
+                <a id="light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <!-- _layouts/post.html -->
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">The Fault in Our Neural Networks. Understanding its Inherent Limitations</h1>
+    <p class="post-meta">June 18, 2024</p>
+    <p class="post-tags">
+      <a href="/blog/2024"> <i class="fas fa-calendar fa-sm"></i> 2024 </a>
+    </p>
+  </header>
+
+  <article class="post-content">
+    <p>In AI, ground-breaking revolutions have been powered by deep neural networks in many crucial fields, especially image recognition and natural language processing. In this euphoric setting of ground-breaking achievements, it becomes essential to know and understand the inherent limitations these powerful tools hold.</p>
+
+    <p>In this article we will be pointing out these limitations, particularly through the lens of the Universal Approximation Theorem, and discussing the consequences that those have, particularly in the area of research and their broader social context.</p>
+
+    <h4 id="the-universal-approximation-theorem-a-double-edged-sword">The Universal Approximation Theorem (A Double-Edged Sword)</h4>
+    <p>The Universal Approximation Theorem is probably the most publicized theorem within the whole theory of neural networks. It was published in 1989 and claims that a neural network with only one hidden layer can approximate any function — if that allow a sufficient number of neurons.</p>
+
+    <p>That is one of the excellent reasons that inspire faith in the great potential of neural networks in solving broad problems, but it evokes two caveats.</p>
+    <ul>
+      <li>It does not indicate the number of neurons at which such an approximation would be made.</li>
+      <li>It also does not indicate how one may find an architecture of the network or set proper weights for the neurons.</li>
+    </ul>
+
+    <p>Why did the universal function approximator go to therapy? Because no matter how hard it tried, it could never quite approximate happiness in this cold, indifferent universe.</p>
+
+    <p>All those aspects are crucial because training a neural network to find those weights is a complex, non-linear, non-convex problem.</p>
+
+    <p>Moreover, no theorem ensures how a neural network will generalize a new task. It only states that a network can approximate a function for a given number of neurons but not in a manner that performs well outside the unique data on which it was trained. This limitation underlines an essential aspect of neural networks: their performance is highly dependent on the quality and breadth of the training data.</p>
+
+    <h4 id="failure-1-generalization-the-achilles-heel">Failure 1: Generalization: The Achilles’ Heel</h4>
+    <p>One of the landmark studies, “Understanding Deep Neural Networks Requires Rethinking Generalization,” sheds light on the generalization problem in neural networks.</p>
+
+    <p>Randomizing labels using a k-sided dice. Note that the label dog corresponds to both banana & tree since it is completely randomized</p>
+
+    <p>The researchers used an experiment on the famous ImageNet dataset to investigate what would happen if new labels were assigned to images at random and a deep neural network were trained on this kind of shuffled data. What they found was entirely unexpected.</p>
+
+    <p>The network’s performance dropped in the test set when the randomization was increased -which was expected since the labels were randomized, but interestingly, the network achieved 100% accuracy in the training set.</p>
+
+    <p>Neural networks are excellent function approximators when we have training data.</p>
+
+    <p>This experiment exposed a large limitations that exist in modern deep neural networks that they’re very very effective at functional approximation in regions when we have training data but we can’t make guarantees on their performance out of those regions and so this raises an important question-how can we derive methods that tell us when the network doesn’t know when it needs more information needs more examples?</p>
+
+    <h4 id="failure-2-garbage-in-garbage-out">Failure 2: Garbage In, Garbage Out</h4>
+    <p>It is worth repeating again and again that input data will be instrumental in the performance of a neural network — a network will produce flawed predictions for noisy, lacking, or biased data. One example is how a CNN was trained to colorize black-and-white images of dogs.</p>
+
+    <p>Because of the biases in the data from which it was taught, this network produced things like green ears and pink chins on dogs (perhaps the model was trained on a lot of images of dogs with their tongues out): one of many signs of it being dependent upon the quality of representation in the training data.</p>
+
+    <p>The overhype around neural networks can, of course, have real-life fatal consequences in safety-critical applications like autonomous driving. At the same time, a tragic case in point is one where, for instance, an autonomous vehicle — with no training data on any such thing as a construction pylon — collides with one and causes death.</p>
+
+    <p>This example highlights the importance of developing robust methods to understand these metrics of uncertainty and risk and how they can be really important for critical applications from autonomous vehicles to medicine to facial recognition and how these Downstream consequences are linked fundamentally to issues of data imbalance feature imbalance and noise.</p>
+
+    <h4 id="failure-3-adversarial-attacks">Failure 3: Adversarial Attacks</h4>
+    <p>One of the issues slowly gaining momentum is adversarial examples. Applying small changes that are unrecognizable by the human eye, adversaries can carry out adversarial attacks, fooling neural networks into producing a wrong end result. For example, a picture with a temple is morphed slightly, and hence, it is deemed with high confidence by the neural network to be an ostrich.</p>
+
+    <p>Random noise added to an image can cause a neural network to misclassify it with high confidence.</p>
+
+    <p>What exactly is this perturbation doing?</p>
+
+    <p>When we train neural networks using gradient descent, the task was to minimize some loss function- which is basically asking how can I change the weights of the neural network to decrease the loss.</p>
+
+    <p>In contrast, thinking about adversarial attacks we now ask a different question — how can we find the small change or a tiny perturbation in the input data X which results in a maximal increase in the loss which in simple term means that we fix the weights and keep the network the same and look at how we can perturb and change and manipulate that input data to try to increase that loss function.</p>
+
+    <p>MIT researchers translated this idea to 3D objects and demonstrated the ability of physical adversarial examples to fool neural nets in the real world. You can read more about it here.</p>
+
+    <h4 id="the-challenge-of-algorithmic-bias">The Challenge of Algorithmic Bias</h4>
+    <p>Algorithmic bias plaguing neural networks is a natural extension of the garbage in-garbage out philosophy. Biases in training data can lead to biased predictions, with detrimental consequences in real-world applications. For example, facial recognition systems have been shown to exhibit racial biases, leading to higher error rates for certain demographic groups.</p>
+
+    <h4 id="conclusion">Conclusion</h4>
+    <p>Excitingly, new research focuses on introducing structure and integrating prior human knowledge into neural network architectures. This approach aims to create smaller, more compact, expressive, and efficient models, potentially revolutionizing their design and utilization.</p>
+
+    <p>Another vital research area is enhancing the ability of neural networks to extrapolate more effectively. This involves developing methods to improve generalization beyond training data, enhancing performance in diverse and unforeseen scenarios.</p>
+
+    <p>In an upcoming article, we’ll try to delve into these exciting new frontiers of deep learning, exploring how structural encoding and model efficiency innovations address current limitations. We’ll also examine advancements enabling better extrapolation, setting the stage for a new era of AI capabilities.</p>
+
+    <h4 id="references">References</h4>
+    <ul>
+      <li>MIT 6.S191 (2023): Deep Learning New Frontiers</li>
+    </ul>
+
+    <p>Neural Networks</p>
+    <p>Adversarial Attack</p>
+    <p>Universal Approximation</p>
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->    
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        © Copyright 2022 Kumar  Kishalaya. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
+
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script src="/assets/js/common.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    
+  </body>
+</html>
+
