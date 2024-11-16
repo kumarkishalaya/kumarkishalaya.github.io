@@ -131,7 +131,7 @@
     <p>In this article we will be pointing out these limitations, particularly through the lens of the Universal Approximation Theorem, and discussing the consequences that those have, particularly in the area of research and their broader social context.</p>
 
     <h4 id="the-universal-approximation-theorem-a-double-edged-sword">The Universal Approximation Theorem (A Double-Edged Sword)</h4>
-    <img src="/assets/img/blogs/fault_in_nn/2_img.webp" alt="" width="900" height="400">
+    <img src="/assets/img/blogs/fault_in_nn/2_img.webp" alt="" width="800" height="400">
     <p></p>
     <p>The Universal Approximation Theorem is probably the most publicized theorem within the whole theory of neural networks. It was published in 1989 and claims that a neural network with only one hidden layer can approximate any function — if that allow a sufficient number of neurons.</p>
 
@@ -151,20 +151,20 @@
 
     <p>One of the landmark studies, “Understanding Deep Neural Networks Requires Rethinking Generalization,” sheds light on the generalization problem in neural networks.</p>
     <p></p>
-    <img src="/assets/img/blogs/fault_in_nn/3_img.webp" alt="" width="900" height="400">
+    <img src="/assets/img/blogs/fault_in_nn/3_img.webp" alt="" width="800" height="400">
     <p></p>
     <p>Randomizing labels using a k-sided dice. Note that the label dog corresponds to both banana & tree since it is completely randomized</p>
 
     <p>The researchers used an experiment on the famous ImageNet dataset to investigate what would happen if new labels were assigned to images at random and a deep neural network were trained on this kind of shuffled data. What they found was entirely unexpected.</p>
     <p></p>
-    <img src="/assets/img/blogs/fault_in_nn/4_img.webp" alt="" width="900" height="400">
+    <img src="/assets/img/blogs/fault_in_nn/4_img.webp" alt="" width="800" height="400">
     <p></p>
 
     <p>The network’s performance dropped in the test set when the randomization was increased -which was expected since the labels were randomized, but interestingly, the network achieved 100% accuracy in the training set.</p>
 
     
     <p></p>
-    <img src="/assets/img/blogs/fault_in_nn/5_img.webp" alt="Neural networks are excellent function approximators when we have training data." width="900" height="400">
+    <img src="/assets/img/blogs/fault_in_nn/5_img.webp" alt="Neural networks are excellent function approximators when we have training data." width="800" height="400">
     <p></p>
     <p>This experiment exposed a large limitations that exist in modern deep neural networks that they’re very very effective at functional approximation in regions when we have training data but we can’t make guarantees on their performance out of those regions and so this raises an important question-how can we derive methods that tell us when the network doesn’t know when it needs more information needs more examples?</p>
 
@@ -172,7 +172,7 @@
     <p>It is worth repeating again and again that input data will be instrumental in the performance of a neural network — a network will produce flawed predictions for noisy, lacking, or biased data. One example is how a CNN was trained to colorize black-and-white images of dogs.</p>
     
     <p></p>
-    <img src="/assets/img/blogs/fault_in_nn/6_img.webp" alt="" width="900" height="400">
+    <img src="/assets/img/blogs/fault_in_nn/6_img.webp" alt="" width="800" height="400">
     <p></p>
     
     <p>Because of the biases in the data from which it was taught, this network produced things like green ears and pink chins on dogs (perhaps the model was trained on a lot of images of dogs with their tongues out): one of many signs of it being dependent upon the quality of representation in the training data.</p>
@@ -180,7 +180,7 @@
     <p>The overhype around neural networks can, of course, have real-life fatal consequences in safety-critical applications like autonomous driving. At the same time, a tragic case in point is one where, for instance, an autonomous vehicle — with no training data on any such thing as a construction pylon — collides with one and causes death.</p>
 
     <p></p>
-    <img src="/assets/img/blogs/fault_in_nn/7_img.webp" alt="" width="900" height="300">
+    <img src="/assets/img/blogs/fault_in_nn/7_img.webp" alt="" width="800" height="300">
     <p></p>
 
     <p>This example highlights the importance of developing robust methods to understand these metrics of uncertainty and risk and how they can be really important for critical applications from autonomous vehicles to medicine to facial recognition and how these Downstream consequences are linked fundamentally to issues of data imbalance feature imbalance and noise.</p>
@@ -189,7 +189,7 @@
     <p>One of the issues slowly gaining momentum is adversarial examples. Applying small changes that are unrecognizable by the human eye, adversaries can carry out adversarial attacks, fooling neural networks into producing a wrong end result. For example, a picture with a temple is morphed slightly, and hence, it is deemed with high confidence by the neural network to be an ostrich.</p>
 
     <p></p>
-    <img src="/assets/img/blogs/fault_in_nn/8_img.webp" alt="Random noise added to an image can cause a neural network to misclassify it with high confidence." width="900" height="400">
+    <img src="/assets/img/blogs/fault_in_nn/8_img.webp" alt="Random noise added to an image can cause a neural network to misclassify it with high confidence." width="800" height="400">
     <p></p>
 
 
